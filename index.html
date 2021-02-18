@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" href="style.css" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Generador de excusas</title>
+
+    <!--Estilos con CSS -->
+    <style type="text/css">
+
+      .excusasJS{
+        font-size: xx-large; /*Tamaño de letra*/
+        font-weight: bolder; /*Estilo de letra*/
+        color: cyan; /*Color de la letra*/
+        text-align: center; /*Centrar texto*/ 
+        vertical-align: middle; /*Altura del texto*/ 
+      }
+
+      body{
+        background:black; /*Color de fondo de la página*/
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Generador de excusas: </h1>
+
+    <div class="excusasJS">
+      <script type="text/javascript">
+
+      //Arreglos con las excusas
+      let who = ['The dog','My grandma','His turtle','My bird'];
+      let action = ['ate','peed','crushed','broke'];
+      let what = ['my homework', 'the keys', 'the car'];
+      let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
+
+      //Generador de número aleatorio
+      let quien = who[Math.floor(Math.random() * who.length)]; 
+      let accion = action[Math.floor(Math.random() * action.length)];
+      let que = what[Math.floor(Math.random() * what.length)];
+      let cuando = when[Math.floor(Math.random() * when.length)];
+        
+      //Impresión de excusa en la página 
+      document.write(quien + " " + accion + " " + que + " " + cuando);
+
+    </script>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  </body>
+</html>
